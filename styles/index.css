@@ -1,0 +1,97 @@
+@tailwind base;
+/* Write your own custom base styles here */
+
+    :root {
+        --azul: #3B28CC;
+        --azulclaro: #788BFF;
+        --verde: #21FA90;
+        --branco: #EAE8FF;
+        --preto: #0c0b0e;
+        -cinza: #252427;
+    }
+
+    body {background-color: #f7f7ff}
+
+    html, body, #__next {
+    height: 100%;
+    }
+    body, #__next {
+    display: flex;
+    flex-direction: column;
+    }
+
+    html { overflow-x:hidden; }
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+
+/* Start purging... */
+@tailwind utilities;
+    .globo-header {
+        top: -240%;
+        right: -35%;
+    }
+
+    .globo-footer {
+        top: -240%;
+        right: -100%;
+    }
+
+    .flex-content {flex: 1 0 auto}
+
+    .title-space {
+        width: 100%;
+    }
+
+    .icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .underline-verde {
+        text-decoration: underline var(--verde);
+        text-decoration-thickness: 5px;
+        text-underline-offset: 3px
+    }
+
+    .animated-palavras::before {
+        content: "CONECTA";
+        animation: palavras infinite ease-in-out 15s;
+      }
+
+      @keyframes palavras {
+        0% {content: "CONECTA"}
+        16.6% {content: "EXPANDE"}
+        33.3% {content: "MODERNIZA"}
+        50% {content: "INTEGRA"}
+        66.6% {content: "PROMOVE"}
+        83.3% {content: "AUXILIA"}
+        100% {content: "CONECTA"}
+      }
+
+    @media (min-width: 640px) {
+        .title-space {
+            width: 30rem; 
+        }
+    }
+
+    @media (max-width: 768px) {
+        .sideMenu {
+            height: 100vh; /* 100% Full-height */
+            width: 0; /* 0 width - change this with JavaScript */
+            position: fixed; /* Stay in place */
+            z-index: 0; /* Stay on top */
+            top: 0; /* Stay at the top */
+            left: 0;
+            background-color: var(--azulclaro); /* Black*/
+            overflow-x: hidden; /* Disable horizontal scroll */
+            overflow-y: visible; /* Disable horizontal scroll */
+            padding-top: 6.5rem; /* Place content 60px from the top */
+            transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+            font-family: Ubuntu;
+            white-space: nowrap;
+          }
+    }

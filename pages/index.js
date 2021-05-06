@@ -20,15 +20,17 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-azul p-8 w-full flex justify-around text-roboto text-branco font-light text-lg md:text-xl text-center items-center px-5 md:px-8 gap-4 md:gap-8">
+      <div className="bg-azul p-8 w-full sm:flex-row flex-col flex justify-around text-roboto text-branco font-light text-lg md:text-xl text-center items-center px-5 md:px-8 gap-4 md:gap-8">
         <div className="flex flex-col justify-center items-center">
           <img src="connect.svg" className="icon" />
           Seu negócio mais digital
         </div>
+        <hr className='bg-white border-1 border-white w-full sm:hidden'/>
         <div className="flex flex-col justify-center items-center">
           <img src="wifi.svg" className="icon" />
           Seja encontrado mais facilmente
         </div>
+        <hr className='bg-white border-1 border-white w-full sm:hidden'/>
         <div className="flex flex-col justify-center items-center">
           <img src="maos.svg" className="icon" />
           Seus clientes vêm até você

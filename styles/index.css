@@ -73,6 +73,13 @@
         100% {content: "CONECTA"}
       }
 
+      @media (min-width: 768px) {
+        .title-space {
+            width: 30rem; 
+        } 
+    }  
+
+
     @media (max-width: 768px) {
         .title-space {
             width: 20rem; 

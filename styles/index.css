@@ -36,8 +36,9 @@
     }
 
     .globo-footer {
-        top: -240%;
-        right: -100%;
+        top: 5%;
+        right: 5%;
+        width: 200px;
     }
 
     .flex-content {flex: 1 0 auto}
@@ -72,13 +73,11 @@
         100% {content: "CONECTA"}
       }
 
-    @media (min-width: 640px) {
-        .title-space {
-            width: 30rem; 
-        }
-    }
-
     @media (max-width: 768px) {
+        .title-space {
+            width: 20rem; 
+        }   
+
         .sideMenu {
             height: 100vh; /* 100% Full-height */
             width: 0; /* 0 width - change this with JavaScript */

@@ -4,13 +4,13 @@ import { useState } from "react";
 export default function Header() {
   const [open, setOpen] = useState(false);
   const paginas = [
-    {nome: 'Sobre', path: '/sobre'},
+    {nome: 'Projetos', path: '/projetos'},
     {nome: 'Objetivos', path: '/objetivos'},
     {nome: 'Quem somos', path: '/quemsomos'},
   ]
 
   return (
-    <>
+    <div className='mb-12 md:mb-0'>
         <div
           style={{
             width: `${open ? "250px" : "0"}`,
@@ -34,7 +34,7 @@ export default function Header() {
         </div>
       
 
-      <div className="bg-azul p-6 pl-5 px-12 flex justify-between z-50 items-center">
+      <div className="bg-azul p-6 shadow-sm md:shadow-none pl-5 px-12 flex justify-between z-50 items-center overflow-hidden fixed md:static w-full">
         <img
           src="menu.svg"
           onClick={() => {
@@ -63,6 +63,6 @@ export default function Header() {
               })}
         </div>
       </div>
-    </>
+    </div>
   );
 }

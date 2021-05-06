@@ -1,10 +1,10 @@
 import Layout from "../components/layout";
 import Body from '../components/body'
 
-export default function Sobre ({}) {
+export default function Projetos ({}) {
     return (
         <Layout>
-            <Body title='Sobre nós'>
+            <Body title='Projetos'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam magna
             velit, aliquam sit amet orci malesuada, sodales porttitor lorem. Nam
             vel efficitur lacus. Pellentesque suscipit eleifend pretium. Sed

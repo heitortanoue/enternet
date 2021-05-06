@@ -3,10 +3,10 @@ import Layout from "../components/layout";
 export default function Home() {
   return (
     <Layout>
-      <div className="pb-16 flex flex-col md:flex-row justify-between items-center container mx-auto gap-5 md:gap-16 px-12 md:px-0">
-        <div className="text-4xl font-bold italic text-preto title-space">
+      <div className="pb-16 flex flex-col md:flex-row justify-between items-center container mx-auto gap-5 md:gap-16 px-12 md:px-5">
+        <div className="text-3xl md:text-4xl font-bold italic text-preto title-space">
           <div className="">A GENTE</div>
-          <div className="not-italic text-6xl md:text-7xl text-azul text-center animated-palavras">
+          <div className="not-italic text-5xl md:text-7xl text-azul text-center animated-palavras">
           </div>
           <div className="text-right">VOCÊ</div>
 

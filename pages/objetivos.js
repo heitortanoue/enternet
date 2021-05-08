@@ -1,71 +1,33 @@
 import Layout from "../components/layout";
-import Body from '../components/body'
+import Body from "../components/body";
+import Estructure from "../components/estructure";
 
-export default function Objetivos ({}) {
-    return (
-        <Layout>
-            <Body title='Objetivos'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam magna
-            velit, aliquam sit amet orci malesuada, sodales porttitor lorem. Nam
-            vel efficitur lacus. Pellentesque suscipit eleifend pretium. Sed
-            fermentum efficitur justo et sollicitudin. Nulla accumsan ac mi eu
-            rhoncus. Cras vitae velit gravida, mattis leo et, bibendum urna.
-            Pellentesque dapibus nisl euismod est maximus lobortis. Nulla
-            facilisis risus mi, a fringilla massa finibus sed. Nam vel
-            condimentum quam. Pellentesque id pulvinar sapien. Pellentesque
-            dapibus quam nibh, luctus lobortis velit mattis tristique. Curabitur
-            et sapien in sem auctor tincidunt. Nunc eleifend, est eu vulputate
-            auctor, nulla felis scelerisque nulla, non pretium lectus nulla eu
-            turpis. Aliquam erat volutpat. Etiam odio arcu, elementum ac varius
-            eu, facilisis id justo. Aliquam massa velit, congue vel nisl et,
-            sollicitudin fermentum massa. Vestibulum ante ipsum primis in
-            faucibus orci luctus et ultrices posuere cubilia curae; Quisque et
-            massa hendrerit, dapibus nulla sed, placerat ipsum. Vivamus odio
-            dolor, laoreet at mattis et, sagittis suscipit purus. In semper arcu
-            non orci pharetra, id posuere lectus bibendum. Mauris vitae justo in
-            eros eleifend luctus nec tristique velit. Nam eget massa egestas,
-            ornare massa vel, elementum risus. Curabitur malesuada quis massa
-            congue iaculis. Vestibulum non condimentum ipsum. Aenean volutpat
-            efficitur nunc vitae lacinia. Sed et justo ut nisi semper
-            condimentum ut sit amet mauris. Nulla egestas blandit justo, sit
-            amet posuere nisi ultrices vel. Donec vel consequat est. Vivamus
-            blandit erat finibus consequat ultrices. Curabitur pulvinar urna
-            tortor, vitae dapibus sem suscipit ut. Aenean vitae ullamcorper
-            eros. Aliquam ornare, justo vitae ullamcorper ullamcorper, sem est
-            porttitor libero, ut tristique lectus ex eget leo. Vestibulum
-            placerat sed metus id tincidunt. Integer varius felis justo, et
-            vehicula leo viverra in. Nulla vel commodo risus. Donec sit amet
-            vulputate magna, a sodales erat. Interdum et malesuada fames ac ante
-            ipsum primis in faucibus. Vestibulum nunc ipsum, maximus et sem nec,
-            cursus molestie ipsum. Phasellus ullamcorper risus ac arcu tempor,
-            ac fermentum sapien laoreet. Aliquam pretium, arcu eget commodo
-            imperdiet, justo eros scelerisque massa, in dictum elit magna eu
-            tellus. Nam nunc quam, sollicitudin a nisi in, aliquam auctor
-            libero. Curabitur condimentum ac nibh at laoreet. Proin congue ex
-            fermentum porttitor imperdiet. Pellentesque hendrerit dolor lacus,
-            eu condimentum felis interdum at. Etiam blandit, arcu et dapibus
-            suscipit, magna nisl blandit felis, sed aliquet lacus nibh eu eros.
-            Fusce bibendum odio elit, dapibus pulvinar justo iaculis eget. Donec
-            mattis risus in condimentum gravida. Vestibulum volutpat ligula eget
-            erat molestie, a blandit odio venenatis. Mauris venenatis diam
-            venenatis nibh maximus, vehicula iaculis risus fringilla. Nullam
-            vulputate dictum sapien. Vestibulum ante ipsum primis in faucibus
-            orci luctus et ultrices posuere cubilia curae; Vestibulum aliquam
-            lorem nisi, vitae sollicitudin libero consectetur a. Nam at mi
-            venenatis, aliquet ligula eget, dapibus lacus. Donec placerat tortor
-            sagittis mattis facilisis. Nulla euismod pellentesque tellus, a
-            feugiat ligula volutpat sit amet. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Integer vitae tellus condimentum,
-            ullamcorper tellus nec, venenatis diam. In vel dolor nec lectus
-            commodo condimentum. Pellentesque vehicula interdum odio, quis
-            vulputate est pretium vitae. Donec quis ullamcorper nibh, quis
-            efficitur lorem. Suspendisse malesuada sapien id purus imperdiet
-            ullamcorper. Nam pellentesque lacus eros, ut feugiat lacus vulputate
-            a. Phasellus finibus ante et orci dapibus congue. Nullam diam quam,
-            mattis dictum urna et, convallis pellentesque sem. Morbi id suscipit
-            sapien, sit amet bibendum felis. Curabitur posuere aliquet molestie.
-            </Body>
-            
-        </Layout>
-    )
+export default function Objetivos({}) {
+  return (
+    <Layout>
+      <Body title="Objetivos">
+        <Estructure imagem="objetivos.svg">
+          <div>
+            &nbsp; &nbsp; &nbsp; &nbsp; A modernidade trouxe ao mundo um novo
+            ambiente de circulação de pessoas, o ambiente virtual, cheio de
+            vantagens e dificuldades, o que nós da <b>Enternet</b> apresentamos é, além
+            de oferecer o melhor caminho por esse mundo novo, garantir também
+            que a sua empresa esteja presente em todos os meios digitais
+            possíveis para que o seu produto possa chegar ao cliente da melhor
+            forma possível.
+          </div>
+          <div>
+            &nbsp; &nbsp; &nbsp; &nbsp; Se ao ler essas palavras você se sente
+            um pouco perdido por não saber como gerenciar um ambiente virtual,
+            oferecer seus produtos pela internet e estar com um espaço bem
+            organizado e apresentável para o seu cliente, pode respirar fundo e
+            descansar, pois saiba que essas são algumas das nossas funções,
+            estamos preparados para criar um ambiente virtual para seus produtos
+            desde o zero, exigindo de vocês nenhum conhecimento prévio sobre o
+            assunto.
+          </div>
+        </Estructure>
+      </Body>
+    </Layout>
+  );
 }

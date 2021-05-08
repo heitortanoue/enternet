@@ -34,7 +34,7 @@ export default function Header() {
         </div>
       
 
-      <div className="bg-azul p-6 shadow-sm md:shadow-none pl-5 px-12 flex justify-between z-50 items-center overflow-hidden fixed md:static w-full">
+      <div className="bg-azul p-4 shadow-sm md:shadow-none pl-5 px-12 flex justify-between z-50 items-center overflow-hidden fixed md:static w-full">
         <img
           src="menu.svg"
           onClick={() => {
@@ -42,18 +42,20 @@ export default function Header() {
           }}
           className='md:hidden w-9'
         />
-        <div className="font-ubuntu font-bold text-branco italic text-3xl relative">
+        <Link href="/">
+        <div className="font-ubuntu font-bold text-branco italic text-3xl relative cursor-pointer">
           <img src="globo.svg" className="absolute globo-header" />
-          <Link href="/">
-            <div className="relative cursor-pointer">ENTERNET</div>
-          </Link>
+          
+            <div className="relative">ENTERNET</div>
+          
         </div>
+        </Link>
         <div className="items-center justify-evenly gap-8 text-branco font-roboto text-lg md:flex hidden">
           {paginas.map((el, ind) => {
                 return (
                   <>
                   <div key={el.nome} className='cursor-pointer'>
-                    <Link href={el.path}><span className="font-regular">{el.nome}</span></Link>
+                    <Link href={el.path}><span className="font-regular p-2">{el.nome}</span></Link>
                   </div>
                   { paginas.length != ind + 1 ? <div>
                   | 

@@ -58,6 +58,12 @@
         text-underline-offset: 3px
     }
 
+    .underline-verde-min {
+        text-decoration: underline var(--verde);
+        text-decoration-thickness: 3px;
+        text-underline-offset: 1px
+    }
+
     .animated-palavras::before {
         content: "CONECTA";
         animation: palavras infinite ease-in-out 15s;

@@ -67,6 +67,7 @@
     .animated-palavras::before {
         content: "CONECTA";
         animation: palavras infinite ease-in-out 15s;
+        -webkit-animation: palavras infinite ease-in-out 15s;
       }
 
       @keyframes palavras {
@@ -95,7 +96,7 @@
             height: 100vh; /* 100% Full-height */
             width: 0; /* 0 width - change this with JavaScript */
             position: fixed; /* Stay in place */
-            z-index: 0; /* Stay on top */
+            z-index: 49; /* Stay on top */
             top: 0; /* Stay at the top */
             left: 0;
             background-color: var(--azulclaro); /* Black*/
